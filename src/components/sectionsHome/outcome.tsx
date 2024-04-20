@@ -27,7 +27,7 @@ export default function Outcome() {
                         <h3>2- Freelancing</h3>
                         <h3>3- Boost Economy</h3>
                         <h3>4- Global Marketing by Panaverse DAO</h3>
-                        
+
 
 
                     </div>
@@ -54,14 +54,3 @@ export default function Outcome() {
 }
 
 
-
-
-// mx-w-screen-xl mx-auto py-6 px-3
-
-
-{/* <ul className="mt-5 text-xl text-slate-700">
-                        <li> >> Product Ownership</li>
-                        <li> >> Freelancing</li>
-                        <li> >> Boost Economy</li>
-                        <li> >> Global Marketing by Panaverse DAO</li>
-                    </ul> */}

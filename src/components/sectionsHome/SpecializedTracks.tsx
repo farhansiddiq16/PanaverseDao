@@ -42,10 +42,10 @@ export default function SpecializedTracks() {
 
                         <div className="mt-5 flex flex-col md:flex-row gap-5">
                             {
-                                selectedItemData?.quarter.map((item) => (
+                                selectedItemData?.quarter.map((item, i) => (
 
 
-                                    <div className="border rounded-md px-8 py-12 flex-1 relative bg-white -z-10">
+                                    <div key={i} className="border rounded-md px-8 py-12 flex-1 relative bg-white -z-10">
                                         <h4 className="font-bold text-lg text-gray-800"> Quarter IV </h4>
                                         <p className="text-gray-700 mt-2"> {item.description} </p>
                                         <div className="absolute -top-5 right-10 -z-10 text-[100px] md:text-[140px] font-bold text-gray-300 "> {item.number} </div>
@@ -69,7 +69,7 @@ export default function SpecializedTracks() {
                     <div className=" basis-4/12 -mt-1 py-3 px-2 flex-1 space-y-8 bg-gray-100 rounded-lg ">
                         {
                             DataST.map((item, i) => (
-                                <div onClick={() => setSelectedItem(item.slug)} key={item.slug} className="flex gap-x-2 items-center cursor-pointer ">
+                                <div key={item.slug} onClick={() => setSelectedItem(item.slug)} key={item.slug} className="flex gap-x-2 items-center cursor-pointer ">
 
                                     <div className=" flex-shrink-0 ">
                                         <Image src={item.image} alt="" className=" h-24 w-36 object-cover rounded-md " />
@@ -79,8 +79,8 @@ export default function SpecializedTracks() {
                                         <h3 className="font-bold text-orange-600">Specialized Track </h3>
                                         <p className="font-semibold text-sm"> {item.header}</p>
                                     </div>
-                                    
-                                  
+
+
 
                                 </div>
                             ))
@@ -89,28 +89,13 @@ export default function SpecializedTracks() {
 
 
 
-
-
                     </div>
-
-
-
 
 
                 </div>
 
 
-
-
-
             </div>
-
-
-
-
-
-
-
 
 
         </section>

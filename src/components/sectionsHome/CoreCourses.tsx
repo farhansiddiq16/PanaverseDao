@@ -1,9 +1,9 @@
 
-
+import React from "react"
 import Button from "../lay/Button"
 
 
-// Arracy function  is used for multiple date
+// Array function  is used for multiple date
 
 const CoreCoursesData = [
     {
@@ -56,39 +56,23 @@ export default function CoreCourses() {
 
 
            <div className="flex flex-col md:flex-row mt-10 gap-5">
-
                 {
-                    CoreCoursesData.map((item, i) => {
+                    CoreCoursesData.map((item, i) => 
 
-                        return (
-
-                    
-                                
-                            <div className="border rounded-md px-8 py-7 flex-1 relative">
+                        (
+                 
+                            <div key={i} className="border rounded-md px-8 py-7 flex-1 relative">
 
                                 <h4 className="font-bold text-lg text-gray-800"> {item.header} </h4>
                                 <p className="text-gray-700 mt-2"> {item.description} </p>
-                                <div className="absolute -top-5 right-10 -z-10 text-[100px] md:text-[140px] font-bold text-gray-300 "> {i + 1} </div>
+                                <div className="absolute -top-5 right-10 -z-10 text-[100px] md:text-[140px] font-bold text-gray-300 "> {item.number} </div>
                             </div>
                         )
 
-                    }
                     )
                 }
 
             </div>
-
-
-            
-               
-          
-
-
-
-
-
-
-
 
         </section >
 
