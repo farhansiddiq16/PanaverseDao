@@ -69,7 +69,7 @@ export default function SpecializedTracks() {
                     <div className=" basis-4/12 -mt-1 py-3 px-2 flex-1 space-y-8 bg-gray-100 rounded-lg ">
                         {
                             DataST.map((item, i) => (
-                                <div key={item.slug} onClick={() => setSelectedItem(item.slug)} key={item.slug} className="flex gap-x-2 items-center cursor-pointer ">
+                                <div onClick={() => setSelectedItem(item.slug)} key={item.slug} className="flex gap-x-2 items-center cursor-pointer ">
 
                                     <div className=" flex-shrink-0 ">
                                         <Image src={item.image} alt="" className=" h-24 w-36 object-cover rounded-md " />
