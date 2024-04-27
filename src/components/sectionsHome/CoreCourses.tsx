@@ -7,16 +7,19 @@ import Button from "../lay/Button"
 
 const CoreCoursesData = [
     {
+        id: 1,
         header: "Quarter I",
         description: "CS-101: Object Oriented Programming using TypeScript",
         number: 1
     },
     {
+        id: 2,
         header: "Quarter II",
         description: "W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform",
         number: 2
     },
     {
+        id: 3,
         header: "Quarter III",
         description: "$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development",
         number: 3
@@ -57,11 +60,11 @@ export default function CoreCourses() {
 
            <div className="flex flex-col md:flex-row mt-10 gap-5">
                 {
-                    CoreCoursesData.map((item, i) => 
-
+                    CoreCoursesData.map((item) => 
+                            
                         (
                  
-                            <div key={i} className="border rounded-md px-8 py-7 flex-1 relative">
+                            <div key={item.id} className="border rounded-md px-8 py-7 flex-1 relative">
 
                                 <h4 className="font-bold text-lg text-gray-800"> {item.header} </h4>
                                 <p className="text-gray-700 mt-2"> {item.description} </p>
