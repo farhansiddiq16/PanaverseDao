@@ -12,16 +12,17 @@ export default function Outcome() {
             <div className="flex gap-x-8 items-center lg:flex-row flex-col-reverse">
 
                 <div className="mt-10 lg:mt-0 ">
-                    <Image src={outcome} alt="" />
+                    <Image src={outcome} alt="outcome" />
                 </div>
 
                 <div className="flex-1">
 
                     <h2 className="text-5xl font-bold text-gray-900">The Outcome for Participants of the Program</h2>
 
-                    <p className="mt-5 text-xl text-slate-700 text-justify"> As a graduate of this program, you will own valuable products such as Full-Stack App Templates, AR and VR Experiences, and APIs that are marketed globally by the Panaverse DAO. You will also have the opportunity to offer your services at a rate of $50 per hour, providing a path to financial stability while contributing to the growth of Pakistan's software exports.</p>
+                    <p className="mt-5 text-xl text-slate-700 text-justify"> As a graduate of this program, you will own valuable products such as Full-Stack App Templates, AR and VR Experiences, and APIs that are marketed globally by the Panaverse DAO. You will also have the opportunity to offer your services at a rate of $50 per hour, providing a path to financial stability while contributing to the growth of Pakistan&apos;s software exports.</p>
 
                     <div className="mt-6 text-lg font-bold text-blue-950 ">
+
 
                         <h3>1- Product Ownership</h3>
                         <h3>2- Freelancing</h3>
